@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.main.MainFragment">
+
+    <nl.dionsegijn.konfetti.xml.KonfettiView
+        android:id="@+id/konfettiView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <TextView
+        android:id="@+id/game_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/pacifico"
+        android:text="Puzzle 15"
+        android:textSize="36sp" />
+    <TextView
+        android:id="@+id/game_over_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/game_name"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="22sp"
+        android:text=""
+        android:textColor="@color/black"
+        android:fontFamily="@font/pacifico"/>
+    <Button
+        android:id="@+id/btn_restart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@id/game_over_info"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="New game"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/pacifico"
+        android:textSize="20sp"
+        />
+    <Button
+        android:id="@+id/btn_main_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@id/btn_restart"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Main menu"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/pacifico"
+        android:textSize="20sp"
+        />
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@id/btn_main_menu"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Exit"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/pacifico"
+        android:textSize="20sp"
+        />
+
+
+</RelativeLayout>
